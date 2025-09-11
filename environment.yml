@@ -7,6 +7,7 @@ dependencies:
   - jupyter_server
   - zarr
   - dask
+  - dask-jobqueue
   - xarray
   - intake=2.0.8
   - intake-esm=2025.2.3
