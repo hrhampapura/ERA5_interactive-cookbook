@@ -12,7 +12,7 @@ This Project Pythia Cookbook covers accessing, regridding, and visualizing this 
 
 ## Motivation
 
-The ERA-5 represents the current state-of-the-art meteorological reanalysis, extending from well back into the 20th century to the present. While the data is freely-available for download by archival centers such as [Copernicus](https://www.copernicus.eu/en) and [RDA](https://rda.ucar.edu/), the data format and directory structure are typically not well-suited for interactive exploration. Specifically, parameters of interest are stored in individual files, for a limited period of time.
+The ERA-5 represents the current state-of-the-art meteorological reanalysis, extending from well back into the 20th century to the present. While the data is freely-available for download by archival centers such as [Copernicus](https://www.copernicus.eu/en) and NCAR's [GDEX](https://.ucar.edu/), the data format and directory structure are typically not well-suited for interactive exploration. Specifically, parameters of interest are stored in individual files, for a limited period of time.
 
 A team at Google Cloud and Research has made interactive exploration much more tenable by representing the data in [Zarr](https://zarr.readthedocs.io/en/stable/) format. Each Zarr file represents a specific "class" of meteorological data, such as:
 
@@ -78,14 +78,14 @@ This notebook reads in a sea-level pressure ERA-5 grid, regrids from Gaussian to
 This notebook reads in sea-level pressure and 2-meter temperature ERA-5 grids, regrids as in the first notebook, and visualizes the data in an interactive manner using [Geoviews](https://geoviews.org).
 
 ### Section 3 ("Interactive Visualization Part 2: `hvPlot`")
-This notebook reads in annual average 2-m temperature from RDA's Zarr store and visualizes the data using `hvPlot`. The notebook also demonstrates how to create a simple interactive plot that allows the user to select a specific year and visualize the 2-m and how to create animations.
+This notebook reads in annual average 2-m temperature from GDEX's Zarr store and visualizes the data using `hvPlot`. The notebook also demonstrates how to create a simple interactive plot that allows the user to select a specific year and visualize the 2-m and how to create animations.
 
 ### Section 4 ("Creating an Interactive Dashboard with `Panel`")
 This notebook demonstrates how to create an interactive dashboard using `Panel` that allows the user to select a specific year and visualize the 2-m temperature. 
 
-## Preprocessing Notebooks for NCAR RDA
-### Section 5 ( "Generate annual/yearly Zarr stores from hourly ERA5 NetCDF files on NCAR’s Research Data Archive")
-This notebook demonstrates how to preprocess hourly ERA5 NetCDF files from NCAR's Research Data Archive (RDA) and generate annual/yearly Zarr stores.
+## Preprocessing Notebooks for NCAR's GDEX
+### Section 5 ( "Generate annual/yearly Zarr stores from hourly ERA5 NetCDF files on NCAR’s Geoscience Data Exchange")
+This notebook demonstrates how to preprocess hourly ERA5 NetCDF files from NCAR's Geoscience Data Exchange (GDEX) and generate annual/yearly Zarr stores.
 
 ### Section 6 ( "Calculate Temperature Anomalies")
 This notebook demonstrates how to calculate temperature anomalies from the annual 2-m temperature Zarr store generated in Section 5.
