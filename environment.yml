@@ -8,6 +8,8 @@ dependencies:
   - zarr
   - dask
   - xarray
+  - intake=2.0.8
+  - intake-esm=2025.2.3
   - geoviews
   - datashader
   - matplotlib
