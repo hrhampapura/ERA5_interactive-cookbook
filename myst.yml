@@ -22,7 +22,7 @@ project:
         - file: notebooks/02InteractiveVisualization.ipynb
         - file: notebooks/03_hvplot.ipynb
         - file: notebooks/04_dashboard.ipynb
-    - title: Preprocessing Notebooks for NCAR RDA
+    - title: Preprocessing Notebooks for NCAR's GDEX
       children:
         - file: notebooks/05_data_preprocessing.ipynb
         - file: notebooks/06_era5_anomaly.ipynb
