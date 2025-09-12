@@ -9,6 +9,7 @@ dependencies:
   - dask
   - dask-jobqueue
   - xarray
+  - h5netcdf
   - intake=2.0.8
   - intake-esm=2025.2.3
   - geoviews
