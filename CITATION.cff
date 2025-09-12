@@ -7,15 +7,22 @@ authors:
     orcid: https://orcid.org/0000-0002-0370-8974 # optional
     website: https://github.com/ktyle
     affiliation: University at Albany # optional
+
   - family-names: Barletta
     given-names: Michael
     website: https://github.com/Michael-Barletta
     orcid: https://orcid.org/0000-0003-3318-7601
+
   - family-names: Hampapura
     given-names: Harsha R.
     orcid: https://orcid.org/0000-0002-2449-9032
     website: https://github.com/hrhampapura
     affiliation: NSF National Center for Atmospheric Research 
+
+  - family-names: Sobhani
+    given-names: Negin
+    website: https://github.com/negin513
+
   - name: "ARCO ERA-5 Cookbook contributors" # use the 'name' field to acknowledge organizations
     website: "https://github.com/ProjectPythia/ERA5_interactive-cookbook/graphs/contributors"
 title: "ARCO ERA-5 Interactive Visualization Cookbook"
