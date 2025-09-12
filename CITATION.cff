@@ -22,14 +22,17 @@ authors:
   - family-names: Sobhani
     given-names: Negin
     website: https://github.com/negin513
+    affiliation: NSF National Center for Atmospheric Research
 
   - family-names: Chmielowiec
     given-names: Philip 
     website: https://github.com/philip2c 
+    affiliation: NSF National Center for Atmospheric Research
 
   - family-names: Cote
     given-names: Nicholas
     website: https://github.com/ncote
+    affiliation: NSF National Center for Atmospheric Research
   - name: "ARCO ERA-5 Cookbook contributors" # use the 'name' field to acknowledge organizations
     website: "https://github.com/ProjectPythia/ERA5_interactive-cookbook/graphs/contributors"
 title: "ARCO ERA-5 Interactive Visualization Cookbook"
