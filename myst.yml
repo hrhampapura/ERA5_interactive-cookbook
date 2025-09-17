@@ -4,7 +4,7 @@ extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
   id: c598479d-c383-4e18-a8a5-b1840fefbec8
-  # title:
+  title: ARCO ERA-5 Interactive Visualization Cookbook
   # description:
   # keywords: []
   # authors: []
