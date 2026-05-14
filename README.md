@@ -8,11 +8,11 @@
 
 A team at [Google Research & Cloud](https://research.google/) are making parts of the [ECMWF Reanalysis version 5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) (aka **ERA-5**) accessible in a [Analysis Ready, Cloud Optimized](https://www.frontiersin.org/articles/10.3389/fclim.2021.782909/full) (aka **ARCO**) format.
 
-This Project Pythia Cookbook covers accessing, regridding, and visualizing this reanalysis data.
+This Project Pythia Cookbook covers accessing, regridding, and visualizing this reanalysis data. We also demonstrate how to acesss [ERA5 data](https://gdex.ucar.edu/datasets/d633000/) archived in an **ARCO** format on NCAR's Geoscience Data Exchange ([GDEX](https://gdex.ucar.edu/)].
 
 ## Motivation
 
-The ERA-5 represents the current state-of-the-art meteorological reanalysis, extending from well back into the 20th century to the present. While the data is freely-available for download by archival centers such as [Copernicus](https://www.copernicus.eu/en) and NCAR's [GDEX](https://.ucar.edu/), the data format and directory structure are typically not well-suited for interactive exploration. Specifically, parameters of interest are stored in individual files, for a limited period of time.
+The ERA-5 represents the current state-of-the-art meteorological reanalysis, extending from well back into the 20th century to the present. While the data is freely-available for download by [Copernicus](https://www.copernicus.eu/en), the data format and directory structure are typically not well-suited for interactive exploration. Specifically, parameters of interest are stored in individual files, for a limited period of time.
 
 A team at Google Cloud and Research has made interactive exploration much more tenable by representing the data in [Zarr](https://zarr.readthedocs.io/en/stable/) format. Each Zarr file represents a specific "class" of meteorological data, such as:
 
@@ -23,6 +23,8 @@ A team at Google Cloud and Research has made interactive exploration much more t
 5. Single Level Forecast
 
 Within each Zarr file, a variety of meteorological parameters, spanning the current period of record (1 January 1979 --> 31 August 2021) of the ARCO ERA-5 repository exist.
+
+The ARCO version of [ERA5 archived on NCAR's GDEX]((https://gdex.ucar.edu/datasets/d633000/)), on the other hand, is regularly updated and spans the period Jan 1, 1940-present. The NCAR copy of ERA5 uses [kerchunk](https://fsspec.github.io/kerchunk/) reference files to turn the model level data into 'virtual' zarr stores. However 'real' zarr stores have been created for the surface variables to convert this dataset into an ARCO collection.
 
 In the notebooks which comprise this Cookbook, we demonstrate the following:
 
@@ -65,7 +67,7 @@ We also gratefully acknowledge the Google Cloud Research team for making an ARCO
 
 ## Structure
 
-This cookbook currently consists of multiple  notebooks that access, regrid, and visualize the ARCO ERA-5 repository. Additionally we cover a section on how to preprocess and create ARCO files. 
+This cookbook currently consists of multiple  notebooks that access, regrid, and visualize the ARCO ERA-5 repository. Additionally we cover a section on how to preprocess and create ARCO files to support specific visualizations. 
 
 Additional notebooks will follow.
 
@@ -84,8 +86,8 @@ This notebook reads in annual average 2-m temperature from GDEX's Zarr store and
 This notebook demonstrates how to create an interactive dashboard using `Panel` that allows the user to select a specific year and visualize the 2-m temperature. 
 
 ## Preprocessing Notebooks for NCAR's GDEX
-### Section 5 ( "Generate annual/yearly Zarr stores from hourly ERA5 NetCDF files on NCAR’s Geoscience Data Exchange")
-This notebook demonstrates how to preprocess hourly ERA5 NetCDF files from NCAR's Geoscience Data Exchange (GDEX) and generate annual/yearly Zarr stores.
+### Section 5 ( "Generate annual/yearly Zarr stores from hourly ERA5 zarr stores on NCAR’s Geoscience Data Exchange")
+This notebook demonstrates how to preprocess hourly ERA5 zarr stores from NCAR's Geoscience Data Exchange (GDEX) and generate annual/yearly Zarr stores.
 
 ### Section 6 ( "Calculate Temperature Anomalies")
 This notebook demonstrates how to calculate temperature anomalies from the annual 2-m temperature Zarr store generated in Section 5.
